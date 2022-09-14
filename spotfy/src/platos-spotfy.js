@@ -23,7 +23,7 @@ axios.request(options).then(function (response) {
   data = response.data
 }).catch(function (error) {
   console.error(error);
-  data = error.message
+  data = error
 });
 
 export default data
