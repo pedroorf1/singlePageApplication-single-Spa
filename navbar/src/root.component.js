@@ -1,4 +1,3 @@
-import Parcel from "single-spa-react/parcel";
 import { navigateToUrl } from "single-spa";
 
 import { useStore } from "@platos/store";
