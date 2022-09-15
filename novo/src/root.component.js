@@ -1,8 +1,12 @@
 import * as React from 'react'
 
 import { useStore } from "@platos/store";
+import Styles from "@platos/styles"
+const { Button, InputText } = Styles
 
 export default function Root(props) {
+
+  console.log(">>>>>>>>>>>>>>>>>>>:", Button)
 
   const [isHover, setIsHover] = React.useState(false);
   //estado do component
@@ -36,11 +40,11 @@ export default function Root(props) {
   return (<>
     <div class="main-content" style={styleContent}>
       <p>{props.name}</p>
-      <button
+      <Button
         onClick={() => state.toggle()}
         style={styleButton}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>Mudar estado</button>
+        onMouseLeave={handleMouseLeave}>Mudar estado</Button>
 
       <section>
         {state.loading ? <div>Carregado</div> : <div>Livre</div>}
