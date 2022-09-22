@@ -1,19 +1,17 @@
 import styled from "styled-components"
-let isHover = false
 
-const Button = styled.input`
+const Input = styled.input`
 font-size:1rem ;
-color: tomato;
-background-color: #449966;
+color: #CCC;
+background-color: #FFF;
 padding: 10px;
-cursor: pointer;
-border-color: transparent;
+border-color: #555;
 border-radius: 5px;
-color: #FFF;
+color: #666;
 transition: 0.5s;
 margin:1rem ;
 &:hover {
-     background-color: #339999;
+     background-color: #EFF;
   }
 `
-export default Button
+export default Input

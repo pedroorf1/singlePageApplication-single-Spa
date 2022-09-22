@@ -1,3 +1,4 @@
 import Button from "./Button"
 import InputText from "./InputText"
-export default { Button, InputText }
+import Container from "./Container"
+export default { Button, InputText, Container }

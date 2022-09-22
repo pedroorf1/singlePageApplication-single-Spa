@@ -1,5 +1,4 @@
 import styled from "styled-components"
-let isHover = false
 
 const Button = styled.button`
 font-size:1rem ;

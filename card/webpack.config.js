@@ -4,15 +4,15 @@ const singleSpaDefaults = require("webpack-config-single-spa-react");
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "platos",
-    projectName: "styles",
+    projectName: "card",
     webpackConfigEnv,
     argv,
   });
 
   return merge(defaultConfig, {
-    devServer: {
-      port: 8082,
-    }
+    output: {
+      libraryTarget: 'system'
+    },
     // modify the webpack config however you'd like to by adding to this object
   });
 };
