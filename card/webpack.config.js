@@ -10,9 +10,8 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    output: {
-      libraryTarget: 'system'
+    devServer: {
+      port: 8084,
     },
-    // modify the webpack config however you'd like to by adding to this object
   });
 };

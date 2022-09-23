@@ -43,14 +43,11 @@
         "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
         "zustand": "https://unpkg.com/zustand@3.6.9/system/index.js",
-        "zustand/middleware": "https://unpkg.com/zustand@3.6.9/system/middleware.js",
-        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js",
-        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.0.7/dist/vue-router.min.js"
+        "zustand/middleware": "https://unpkg.com/zustand@3.6.9/system/middleware.js"
       }
     }
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" as="script" crossorigin="anonymous" />
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
@@ -62,10 +59,10 @@
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@platos/root-config": "//localhost:9000/platos-root-config.js",
         "@platos/navbar": "//localhost:8080/platos-navbar.js",
+        "@platos/card": "//localhost:8084/platos-card.js",
         "@platos/novo": "//localhost:8081/platos-novo.js",
         "@platos/store": "//localhost:5100/platos-store.js",
-        "@platos/styles": "//localhost:8082/platos-styles.js",
-        "@platos/card": "//localhost:8083/js/app.js"
+        "@platos/styles": "//localhost:8082/platos-styles.js"
 
       }
     }
@@ -102,10 +99,10 @@
   </noscript>
   <script>
     System.import('@platos/root-config');
-    // System.import('@platos/card');
-    // System.import('@platos/styles');
-    // System.import('@platos/novo');
-    // System.import('@platos/navbar');
+    System.import('@platos/styles');
+    System.import('@platos/card');
+    System.import('@platos/novo');
+    System.import('@platos/navbar');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
